@@ -65,7 +65,12 @@ body {
 .button {
     margin-top: 50px;
     height: 50px;
-    width: 150px;
+    width: 250px;
+    color: white;
+    background-color: #AC786C ;
+    border: 2px solid white ;
+    border-radius: 10px;
+    font-size: large;
     
 }
 .apresentacao {
@@ -96,6 +101,8 @@ body {
     display: flex;
     width: 100%;
     height: 500px;
+    text-align: center;
+    color: white;
 
 }
 
@@ -106,25 +113,42 @@ body {
     padding: 50px;
     
 }
-.log img {
-    width: 100%;
-    height: 100%;
-}
 
 .h1servicos {
     position: absolute;
+    left: 37%; /* Posiciona a div no meio da tela */
+    padding-top: 15px;
+
 }
 
 .botaoservicos-conteiner {
     background-color: #AC786C;
     text-align: center;
     padding-bottom: 20px;
+    
 }
 .buttonservicos {
     margin: auto;
+    height: 50px;
+    width: 500px;
+    color: white;
+    background-color: #AC786C ;
+    border: 2px solid white ;
+    border-radius: 10px;
+    font-size: large;
 }
 
 .rodape {
     background-color: #F3F3F3;
+}
 
-    }
+.rodape {
+    display: flex;
+    width: 100%;
+    padding: 20px 0 0 50px;
+    height: 500px;
+}
+
+.filho-rodape {
+    flex: 1;
+}
