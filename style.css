@@ -1,0 +1,130 @@
+/* Estilos para o corpo da página */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para o menu lateral 
+.sidebar {
+    width: 15%; 
+    background-color: #333;
+    color: #fff;
+    height: 100vh;
+    padding: 20px;
+    position: fixed;
+    overflow-y: auto;
+}*
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+}/
+
+/* Estilos para o conteúdo principal */
+.content {
+    padding: 0;
+    width: 100%; /* Ajuste para o conteúdo ocupar o restante da tela */
+}
+
+.background-image {
+    width: 100%;
+}
+
+.image-container {
+    position: relative; /* Define um contexto para posicionamento absoluto */
+    width: 100%; /* Ajuste conforme necessário */
+    height: auto;
+}
+
+.image-container img {
+    width: 100%; /* Ajusta o tamanho da imagem */
+    display: block;
+  }
+
+.conteiner-buttons { 
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    background-color: #AC786C;
+    height: 150px;
+    width: 100%; 
+}
+
+.button {
+    margin-top: 50px;
+    height: 50px;
+    width: 150px;
+    
+}
+.apresentacao {
+    background-color: #F3F3F3;
+    display: flex;
+    height: 500px;
+    width: 100%;
+   
+}
+
+.img-apresentacao, .text-apresentacao {
+    flex: 1;
+    
+}
+
+.imgperfil {
+    padding: 50px;
+    width: 60%;
+    justify-content: center;
+}
+
+.text-apresentacao {
+    padding: 50px 50px 0 0;
+}
+
+.servicos {
+    background-color: #AC786C;
+    display: flex;
+    width: 100%;
+    height: 500px;
+
+}
+
+.log {
+    flex: 1;
+    width: 100px;
+    height: 150px;
+    padding: 50px;
+    
+}
+.log img {
+    width: 100%;
+    height: 100%;
+}
+
+.h1servicos {
+    position: absolute;
+}
+
+.botaoservicos-conteiner {
+    background-color: #AC786C;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.buttonservicos {
+    margin: auto;
+}
+
+.rodape {
+    background-color: #F3F3F3;
+
+    }
