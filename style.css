@@ -36,16 +36,22 @@ body {
 .content {
     padding: 0;
     width: 100%; /* Ajuste para o conteúdo ocupar o restante da tela */
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 
 .background-image {
     width: 100%;
+    transition: height 0.3s ease-out; /* Transição suave */
+  height: 100vh; /* Começa ocupando toda a altura da tela */
 }
 
 .image-container {
-    position: relative; /* Define um contexto para posicionamento absoluto */
-    width: 100%; /* Ajuste conforme necessário */
-    height: auto;
+    position: relative;
+    overflow: hidden;   width: 100%; /* Ajuste conforme necessário */
+    height: 100vh;
+    transition: height 0.3s ease-out; /* Transição suave */
 }
 
 .image-container img {
@@ -82,18 +88,22 @@ body {
 }
 
 .img-apresentacao, .text-apresentacao {
-    flex: 1;
+  background-color: aqua;
+  display: flex;
+  justify-content: space-evenly; 
+  width: 100%;
     
 }
 
 .imgperfil {
-    padding: 50px;
-    width: 60%;
+    padding: 80px;
     justify-content: center;
 }
 
 .text-apresentacao {
-    padding: 50px 50px 0 0;
+    padding: 125px 50px 149px 0;
+    flex-direction: column;
+    margin: 85;
 }
 
 .servicos {
@@ -144,11 +154,33 @@ body {
 
 .rodape {
     display: flex;
-    width: 100%;
-    padding: 20px 0 0 50px;
+    padding: 20px 50px 50px 50px;
     height: 500px;
 }
 
 .filho-rodape {
     flex: 1;
+}
+
+#ponto {
+
+    display: flex;
+    justify-content: space-around; /* ou use 'space-between' para espaçar entre os ícones */
+    align-items: center;
+    list-style-type: none; /* aqui ao lado tira o ponto preto de frente da li */
+
+}
+
+#ponto img {
+    width: 100%;
+    height: auto; /* Mantém a proporção */
+}
+
+.iconredes {
+    padding: 16px;
+}
+
+footer {  
+    background-color: #F3F3F3;
+    text-align: center;
 }
