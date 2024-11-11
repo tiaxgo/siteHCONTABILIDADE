@@ -38,20 +38,20 @@ body {
     width: 100%; /* Ajuste para o conteúdo ocupar o restante da tela */
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    
 }
 
 .background-image {
     width: 100%;
-    transition: height 0.3s ease-out; /* Transição suave */
-  height: 100vh; /* Começa ocupando toda a altura da tela */
+    transition: height 1s ease-out; /* Transição suave */
+     /* Começa ocupando toda a altura da tela */
 }
 
 .image-container {
     position: relative;
     overflow: hidden;   width: 100%; /* Ajuste conforme necessário */
-    height: 100vh;
-    transition: height 0.3s ease-out; /* Transição suave */
+ 
+    transition: height 1s ease-out; /* Transição suave */
 }
 
 .image-container img {
@@ -68,16 +68,22 @@ body {
     width: 100%; 
 }
 
-.button {
-    margin-top: 50px;
-    height: 50px;
-    width: 250px;
+
+#button {
     color: white;
     background-color: #AC786C ;
     border: 2px solid white ;
     border-radius: 10px;
     font-size: large;
-    
+    pointer-events: all;
+
+}
+
+.button {
+    margin-top: 50px;
+    height: 50px;
+    width: 250px;
+
 }
 .apresentacao {
     background-color: #F3F3F3;
@@ -141,11 +147,7 @@ body {
     margin: auto;
     height: 50px;
     width: 500px;
-    color: white;
-    background-color: #AC786C ;
-    border: 2px solid white ;
-    border-radius: 10px;
-    font-size: large;
+
 }
 
 .rodape {
