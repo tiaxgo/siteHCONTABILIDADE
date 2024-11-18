@@ -2,18 +2,18 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 
-
 body {
-    display: flex;
-    flex-direction: column;
+    height: 100%; /* Garante que o body ocupe a altura total da viewport */
     margin: 0;
+    display: flex;
+    flex-direction: row;
     font-family: Arial, sans-serif;
     background-color: #AC786C;
-    
-
+    width: 100%; /* Garante que o body ocupe toda a largura da viewport */
 }
 
 /* Estilos para o menu lateral 
@@ -39,10 +39,12 @@ body {
 
 /* Estilos para o conteúdo principal */
 .content {
-    margin-left: 250px; /* Espaço suficiente para o menu lateral */
-    width: 100%; /* Ajuste para o conteúdo ocupar o restante da tela */
+ /* Espaço suficiente para o menu lateral */
     display: flex;
     flex-direction: column;
+    width: 85%; /* Content ocupa o restante da largura */
+    box-sizing: border-box;
+    
     
 }
 
@@ -252,14 +254,13 @@ hr {
 
   /* Menu Lateral */
 .sidebar {
-    width: 210px; 
+    width: 15%; 
     background-color: #333;
     color: #fff;
-    height: 100vh;
+    height: 339vh;
     padding: 20px;
-    position: fixed;
-    overflow-y: auto;
-    z-index: 1;
+    box-sizing: border-box; /* Inclui o padding dentro da largura definida */
+
 }
 
 .sidebar h2 {
@@ -289,3 +290,5 @@ hr {
 .sidebar ul li a:hover {
     background-color: #575757;
 }
+
+
