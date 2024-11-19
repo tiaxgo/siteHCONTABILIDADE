@@ -342,7 +342,7 @@ hr {
     .apresentacao {
         flex-direction: column; /* Empilha imagem e texto verticalmente */
         height: auto; /* Altura ajusta-se ao conteúdo */
-        margin-bottom: 50px;
+        padding-bottom: 50px;
     }
 
     .img-apresentacao, .text-apresentacao {
