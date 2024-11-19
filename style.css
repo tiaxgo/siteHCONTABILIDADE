@@ -12,7 +12,7 @@ body {
     display: flex;
     flex-direction: row;
     font-family: Arial, sans-serif;
-    background-color: #AC786C;
+    background-color: #fff;
     width: 100%; /* Garante que o body ocupe toda a largura da viewport */
 }
 
@@ -113,7 +113,7 @@ body {
 }
 
 .img-apresentacao, .text-apresentacao {
-  background-color: rgb(255, 255, 255);
+  background-color: #F3F3F3;
   display: flex;
   justify-content: space-evenly; 
   width: 100%;
@@ -224,6 +224,8 @@ body {
     height: auto; /* Mantém a proporção */
 }
 
+
+
 .iconredes {
     padding: 16px;
 }
@@ -231,6 +233,7 @@ body {
 footer {  
     background-color: #F3F3F3;
     text-align: center;
+    padding-top: 50px;
     padding-bottom: 50px;
     font-size: 12px;
     color: grey;
@@ -253,35 +256,48 @@ hr {
   }
 
   /* Menu Lateral */
-.sidebar {
-    width: 15%; 
-    background-color: #333;
-    color: #fff;
-    height: 339vh;
-    padding: 20px;
-    box-sizing: border-box; /* Inclui o padding dentro da largura definida */
+.logosidemenu {    
+    width: 20%;
+    height: auto; /* Mantém a proporção */
 
 }
 
+.sidebar {
+    width: 15%; 
+    background-color: #fff;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box; /* Inclui o padding dentro da largura definida */
+    text-align: left;
+
+}
+
+
+.sidebar img {
+    margin: 50px 0 0px 25px;
+}
+
 .sidebar h2 {
-    text-align: center;
-    color: #fff;
-    margin-bottom: 30px;
+    color: black;
+    margin: 30px 0 50px 25px;
    
 }
 
 .sidebar ul {
     list-style-type: none;
     padding: 0;
+    margin: 50px 0 0px 15px;
+
 }
 
 .sidebar ul li {
     padding: 10px;
-    text-align: center;
+    text-decoration: none;
+
 }
 
 .sidebar ul li a {
-    color: white;
+    color: black;
     text-decoration: none;
     display: block;
     transition: background-color 0.3s;
@@ -291,4 +307,135 @@ hr {
     background-color: #575757;
 }
 
+.linha {
+    background-color: #AC786C;
+}
 
+@media screen and (max-width: 1000px){
+ body {
+        
+    }
+
+    .sidebar {
+    display: none;
+    }
+    .content {
+    width: 100%;
+
+    }
+    .button {
+    margin-top: 0px;
+
+    }
+    .buttonservicos{
+    width: 80%;
+    }
+
+    .conteiner-buttons {
+        flex-direction: column; /* Empilha os botões verticalmente */
+        justify-content: center; /* Centraliza os botões */
+        align-items: center; /* Centraliza horizontalmente */
+        height: 290px; /* Ajusta a altura para acomodar todos os botões */
+        gap: 30px; /* Adiciona espaçamento entre os botões */
+        padding: 0px 0; /* Adiciona um pouco de espaço ao redor */
+    }
+    .apresentacao {
+        flex-direction: column; /* Empilha imagem e texto verticalmente */
+        height: auto; /* Altura ajusta-se ao conteúdo */
+        margin-bottom: 50px;
+    }
+
+    .img-apresentacao, .text-apresentacao {
+        width: 100%; /* Ambos ocupam a largura total */
+        padding: 10px; /* Reduz o espaçamento interno */
+    }
+
+    .img-apresentacao {
+        margin-bottom: 20px; /* Adiciona espaço entre a imagem e o texto */
+    }
+
+    .text-apresentacao {
+        text-align: center; /* Centraliza o texto */
+        padding: 10px 20px; /* Ajusta o espaçamento */
+    }
+
+    .text-apresentacao p {
+        font-size: 14px; /* Reduz o tamanho da fonte para telas menores */
+        line-height: 1.6; /* Melhora a leitura */
+    }
+    .servicos {
+        flex-direction: column; /* Empilha os elementos verticalmente */
+        height: auto; /* Ajusta a altura automaticamente ao conteúdo */
+        padding: 20px; /* Adiciona espaçamento interno */
+    }
+
+    .log {
+        width: 100%; /* Cada item ocupa toda a largura */
+        height: auto; /* Altura ajustada automaticamente */
+        padding: 20px 0; /* Reduz o espaçamento interno */
+        display: flex; /* Ajusta o conteúdo para centralização */
+        flex-direction: column;
+        align-items: center; /* Centraliza o conteúdo horizontalmente */
+    }
+
+    .log img {
+        max-width: 50%; /* Reduz o tamanho da imagem */
+        height: auto; /* Mantém as proporções */
+        margin-bottom: 10px; /* Espaço abaixo da imagem */
+    }
+
+    .log p {
+        font-size: 14px; /* Reduz o tamanho do texto */
+    }
+
+    .h1servicos {
+        font-size: 24px; /* Ajusta o tamanho do título */
+        top: 50%; /* Move o título para uma posição visível */
+        position: relative;
+    }
+
+    .divdeservico {
+        height: auto; /* Ajusta automaticamente ao conteúdo */
+        padding: 20px 10px; /* Espaçamento interno */
+    }
+    .rodape {
+        flex-direction: column; /* Empilha os elementos verticalmente */
+        height: auto; /* Ajusta a altura automaticamente ao conteúdo */
+        padding: 20px 20px; /* Reduz o espaçamento interno */
+        align-items: center; /* Centraliza os elementos */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .filho-rodape {
+        margin: 20px 0; /* Reduz o espaçamento entre os itens */
+        flex: none; /* Permite ajustar individualmente */
+        width: 100%; /* Cada item ocupa toda a largura */
+    }
+
+    .filho-rodape p {
+        margin: 10px 0; /* Reduz o espaçamento superior e inferior */
+        font-size: 16px; /* Ajusta o tamanho do texto */
+    }
+
+    .lista-personalizada {
+        padding: 0; /* Remove padding da lista */
+        list-style-type: none; /* Remove os marcadores padrão */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .lista-personalizada li {
+        margin: 5px 0; /* Adiciona espaçamento entre os itens */
+        font-size: 14px; /* Reduz o tamanho do texto */
+    }
+
+    #ponto {
+        justify-content: center; /* Centraliza os ícones das redes sociais */
+        gap: 10px; /* Adiciona espaço entre os ícones */
+        flex-wrap: wrap; /* Permite que os ícones quebrem linha se necessário */
+    }
+
+    .iconredes img {
+        max-width: 40px; /* Reduz o tamanho dos ícones */
+        height: auto; /* Mantém as proporções */
+    }
+}
