@@ -16,3 +16,6 @@ window.addEventListener("scroll", function () {
     // Adiciona uma transição suave
     image.style.transition = "height 0.3s ease";
 });
+
+
+
