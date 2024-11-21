@@ -5,6 +5,22 @@
     box-sizing: border-box;
 }
 
+header {
+    justify-content: space-between;
+    align-items: center;
+    display: none;
+}
+
+nav a {
+
+    text-decoration: none;
+
+}
+
+.linkmobile {
+    text-decoration: none;
+}
+
 
 body {
     height: 100%; /* Garante que o body ocupe a altura total da viewport */
@@ -57,7 +73,6 @@ body {
 .image-container {
     position: relative;
     overflow: hidden;   width: 100%; /* Ajuste conforme necessário */
- 
     transition: height 1s ease-out; /* Transição suave */
 }
 
@@ -159,11 +174,7 @@ body {
 
 
 .h1servicos {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); /* Centraliza em relação ao ponto central */
-    text-align: center;
+    padding-top: 30px;
 }
 
 .divdeservico {
@@ -263,7 +274,7 @@ hr {
 }
 
 .sidebar {
-    width: 15%; 
+    max-width: 15%; 
     background-color: #fff;
     height: 100vh;
     padding: 20px;
@@ -280,6 +291,9 @@ hr {
 .sidebar h2 {
     color: black;
     margin: 30px 0 50px 25px;
+    font-size: 1.3vw;
+    max-width: 100%; /* Não ultrapassar o tamanho da div pai */
+    word-wrap: break-word; /* Quebrar texto se necessário */
    
 }
 
@@ -311,8 +325,159 @@ hr {
     background-color: #AC786C;
 }
 
+
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.bi {
+    font-size: 1.3rem;
+    cursor: pointer;
+    color: #707070;
+    padding-left: 10px;
+
+}
+
+.bi-moon {
+    display: none;
+
+}
+
+
+header nav.nav-mobile ul li {
+    list-style-type: none;
+
+}
+
+.menu-mobile {
+    background-color: #8A6056;
+    height: -webkit-fill-available;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999999;
+    width: 0%;
+    overflow: hidden;
+    transition: .3s;
+
+}
+
+.menu-mobile.abrir-menu{
+    width: 70%;
+}
+
+.menu-mobile.abrir-menu ~ .overlay-menu{
+    display: block;
+
+}
+ /* PARTE DO MENU MOBILE */
+.menu-mobile nav ul{
+    text-align: right;
+}
+
+.menu-mobile nav ul li a{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 10px 20px 30px ;
+    text-align: left;
+    display: block;
+
+    
+}
+
+.menu-mobile .nav-mobile ul li.linkmobile {
+    padding: 20px;
+    display: block;
+    text-decoration: none;
+}
+
+.menu-mobile nav ul li a:hover{
+    background-color: #5c413a;
+    color: #fff;
+}
+
+ /* Esse nav-mobile foi pra ancora preencher todo espaço do menu*/
+.nav-mobile {
+    display: block;
+   
+ 
+}
+
+.menu-mobile .btn-fechar i{
+    color: #504e4e;
+    font-size: 30px;
+
+}
+.menu-mobile .btn-fechar {
+    padding: 13px;
+    color: #707070;
+}
+
+.btn-abrir-menu i{
+    color: rgba(62, 108, 108, 0.768);
+    font-size: 30px;
+    padding-right: 10px;
+
+}
+
+.overlay-menu {
+    background-color: #000000b9;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
+}
+
+.btn-abrir-menu {
+    display: one;
+}
+
+
+
+.bi::before {
+    padding: 10px;
+}
+
+
 @media screen and (max-width: 1000px){
- body {
+    header {
+    display: flex;
+    position: fixed;
+    z-index: 2;
+    background-color: white;
+    width: 100%;
+    
+    }
+    .image-container {
+        margin-top: 60px;
+
+    }
+    .navMobile {
+       display: flex;
+
+        
+    }
+    .logosidemenu {
+        margin: 10px;
+
+    }
+
+    .aMobile {
+        margin: 10px;
+        font-size: 3vw;
+        word-wrap: break-word; /* Quebrar texto se necessário */
+        padding-top: 16px;
+       
+    }
+
+
+    body {
+    flex-direction: column;
         
     }
 
@@ -439,6 +604,7 @@ hr {
         height: auto; /* Mantém as proporções */
     }
 
+    
 
 
 }
