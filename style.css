@@ -283,9 +283,13 @@ hr {
 
 }
 
+.dark .sidebar {
+    background-color: #504e4e;
+}
+
 
 .sidebar img {
-    margin: 50px 0 0px 25px;
+    margin: 15px 0 0px 20px;
 }
 
 .sidebar h2 {
@@ -339,9 +343,24 @@ input[type="checkbox"] {
 
 }
 
-.bi-moon {
-    display: none;
+/* aqui embaxo é os botoes sol e lua, um aparece e o outro some */
 
+.bi-moon {
+    display: block;
+
+}
+
+.bi-sun {
+    display: none;
+}
+
+.dark .bi-moon {
+    display: none;
+} 
+
+
+.dark .bi-sun {
+    display: block;
 }
 
 
@@ -418,7 +437,7 @@ header nav.nav-mobile ul li {
 .btn-abrir-menu i{
     color: rgba(62, 108, 108, 0.768);
     font-size: 30px;
-    padding-right: 10px;
+    padding-right: 15px;
 
 }
 
@@ -439,8 +458,11 @@ header nav.nav-mobile ul li {
 
 
 
-.bi::before {
-    padding: 10px;
+
+.icons {
+    width: 100%;
+    padding-left: 15px;
+    
 }
 
 
@@ -605,6 +627,9 @@ header nav.nav-mobile ul li {
     }
 
     
+    label {
+        padding-left: 10px;
+    }
 
-
+    
 }
