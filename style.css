@@ -1,5 +1,10 @@
 /* Estilos para o corpo da página */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;1,200&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
 * {
+    font-family: 'Lato', 'Karla', sans-serif ;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -72,9 +77,9 @@ body {
 
 .image-container {
     position: relative;
-    height: 20%;
+    height: 200px;
     overflow: hidden;   width: 100%; /* Ajuste conforme necessário */
-    transition: height 1s ease-out; /* Transição suave */
+
 }
 
 .image-container img {
@@ -108,6 +113,18 @@ body {
 
     
 
+}
+
+a:visited {
+    color: inherit; /* Cor igual à original, mesmo depois de clicado */
+}
+
+.aMobile:link{
+    color: black;
+}
+
+.aMobile:visited {
+    color: inherit; /* Cor igual à original, mesmo depois de clicado */
 }
 
 #button:hover {
@@ -145,11 +162,14 @@ body {
     padding: 125px 50px 149px 0;
     flex-direction: column;
     margin: 85;
+    font-style: italic;
 
 }
 
-.text-apresentacao h2  {
+.text-apresentacao h1  {
     color: rgba(172, 120, 108, 1);
+    font-weight: 300;
+    font-style: normal;
 }
 
 .servicos {
@@ -163,9 +183,11 @@ body {
 
 }
 
+
+
 .sobrenos {
-    height: 70vh;
-    padding: 50px 50px 50px 50px;
+    height: 100%;
+    padding: 50px 50px 0px 50px;
     text-align: center;
     background-color: #F3F3F3;
 
@@ -183,12 +205,20 @@ body {
         justify-content: center; /* Centraliza horizontalmente */
 }
 
+
+
 .log {
     flex: 1;
     width: 100px;
-    height: 150px;
+    height: 100%;
     padding: 50px;
-    
+    font-size: larger;
+
+}
+
+.log img {
+    padding-bottom: 25px;
+    padding-top: 25px;
 }
 
 
@@ -313,9 +343,10 @@ hr {
 }
 
 .sidebar h2 {
-    color: black;
+    color: rgb(66, 65, 65);
     margin: 30px 0 50px 25px;
     font-size: 1.3vw;
+    font-weight: 300;
     max-width: 100%; /* Não ultrapassar o tamanho da div pai */
     word-wrap: break-word; /* Quebrar texto se necessário */
    
@@ -331,6 +362,8 @@ hr {
 .sidebar ul li {
     padding: 10px;
     text-decoration: none;
+    font-size: medium;
+    font-weight: 300;
 
 }
 
@@ -342,7 +375,7 @@ hr {
 }
 
 .sidebar ul li a:hover {
-    background-color: #575757;
+    color: #575757;
 }
 
 .linha {
@@ -511,7 +544,7 @@ header nav.nav-mobile ul li {
 
     .aMobile {
         margin: 10px;
-        font-size: 3vw;
+        font-weight: 300;
         word-wrap: break-word; /* Quebrar texto se necessário */
         padding-top: 16px;
        
@@ -659,5 +692,48 @@ header nav.nav-mobile ul li {
     
     }
 
+    body.bservicos .servicos {
+        height: 100%;
+    }
+
     
 }
+
+/* AQUI ABAIXO ESTILIZAÇÃO PARA A PAGINA SERVIÇOS*/
+body.bservicos .servicos {
+    height: 100%;
+
+}
+
+
+body.bservicos .log p {
+    padding-top: 15px;
+}
+body.bservicos .log {
+    padding: 20px 50px 0 50px;
+}
+
+body.bservicos .h1servicos {
+    position: absolute;
+    min-width: 50%;
+    top: 50%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta o texto para o verdadeiro centro */
+    color: white; /* Cor do texto */
+    font-size: 5rem; /* Ajuste conforme necessário */
+    font-weight: 300;
+    text-align: center; /* Centraliza o texto */
+}
+
+/* AQUI ABAIXO ESTILIZAÇÃO PARA A PAGINA SOBRE NÓS*/
+
+body.bsobrenos .h1sobrenos {
+    position: absolute;
+
+    top: 50%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta o texto para o verdadeiro centro */
+    color: white; /* Cor do texto */
+    font-size: 5rem; /* Ajuste conforme necessário */
+    font-weight: 300;
+    text-align: center; /* Centraliza o texto */}

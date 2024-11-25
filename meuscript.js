@@ -9,12 +9,12 @@ window.addEventListener("scroll", function () {
         image.style.height = `${newHeight}vh`;
     } else {
         // Para desktop: Mantém a lógica original
-        let newHeight = Math.max(37 - scrollPosition / 20, 20); // Limita o mínimo em 20vh
+        let newHeight = Math.max(37 - scrollPosition / 30, 30); // Limita o mínimo em 20vh
         image.style.height = `${newHeight}vh`;
     }
 
     // Adiciona uma transição suave
-    image.style.transition = "height 0.3s ease";
+    image.style.transition = "height 0.2s ease";
 });
 
 /* abaixo menu com overlay versao mobile*/ 
