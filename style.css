@@ -146,7 +146,7 @@ a:visited {
 
 .filho-rodape ul li a span:link {
     color:#8A6056;
-    text-decoration: none;
+    text-decoration-color: red; /* Define a cor do sublinhado */
 }
 
 
