@@ -716,11 +716,15 @@ header nav.nav-mobile ul li {
     }
 
     .sobrenos {
-        height: 70vh;
-        padding: 50px 50px 0px 50px;
+        height: 100%;
+        padding: 50px 50px 50px 50px;
         text-align: center;
         
     
+    }
+
+    .p1, .p2 {
+        color:rgba(172, 120, 108, 1) ;
     }
 
     body.bservicos .servicos {
