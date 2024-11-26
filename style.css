@@ -130,9 +130,13 @@ a:visited {
 .aMobile span {
     color: black;
 }
+.alink {
+    color:#8A6056; 
+
+}
 
 .alink:link {
-    color:#8A6056;
+    color:#8A6056; 
 
 }
 
