@@ -119,15 +119,15 @@ a:visited {
     color: inherit; /* Cor igual à original, mesmo depois de clicado */
 }
 
-.aMobile:link{
+.aMobile a span:link{
     color: black;
 }
 
-.aMobile:visited {
+.aMobile a span:visited {
     color: inherit; /* Cor igual à original, mesmo depois de clicado */
 }
 
-.aMobile span {
+.aMobile a span {
     color: black;
 }
 .alink {
@@ -146,8 +146,8 @@ a:visited {
 
 .filho-rodape ul li a span:link {
     color:#8A6056;
-    text-decoration: underline;
-    text-decoration-color: red; /* Define a cor do sublinhado */
+    text-decoration: none;
+    
 }
 
 
