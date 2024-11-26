@@ -127,6 +127,16 @@ a:visited {
     color: inherit; /* Cor igual à original, mesmo depois de clicado */
 }
 
+.aMobile span {
+    color: black;
+}
+
+.alink:link {
+    color:#8A6056;
+
+}
+
+
 #button:hover {
     background-color: #f3f3f333;
 }
