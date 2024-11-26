@@ -141,11 +141,12 @@ a:visited {
 }
 
 .filho-rodape ul li a span {
-    color:#8A6056
+    color:#8A6056;
 }
 
 .filho-rodape ul li a span:link {
-    color:#8A6056
+    color:#8A6056;
+    text-decoration: none;
 }
 
 
