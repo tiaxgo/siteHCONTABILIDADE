@@ -81,9 +81,17 @@ body {
 
 .image-container {
     position: relative;
-    height: 200px;
-    overflow: hidden;   width: 100%; /* Ajuste conforme necessário */
+    height: 29vh;
+    overflow: hidden;  
+    width: 100%; /* Ajuste conforme necessário */
 
+}
+
+.image-container-servicos {
+    position: relative;
+    height: 60vh;
+    overflow: hidden;  
+    width: 100%; /* Ajuste conforme necessário */
 }
 
 .image-container img {
@@ -186,7 +194,7 @@ a:visited {
 }
 
 .imgperfil {
-    padding: 80px;
+    padding: 50px 50px 50px 50px;
     justify-content: center;
 }
 
@@ -561,6 +569,14 @@ header nav.nav-mobile ul li {
     }
     .image-container {
         margin-top: 60px;
+        
+
+    }
+
+    .image-container-servicos {
+        margin-top: 65px;
+        height: 30vh;
+        
 
     }
     .navMobile {
@@ -592,6 +608,7 @@ header nav.nav-mobile ul li {
     }
     .content {
     width: 100%;
+    
 
     }
     .button {
@@ -625,6 +642,11 @@ header nav.nav-mobile ul li {
         margin-bottom: 20px; /* Adiciona espaço entre a imagem e o texto */
     }
 
+    .imgperfil {
+        padding: 50px 50px 10px 50px;
+        justify-content: center;
+    }
+    
     .text-apresentacao {
         text-align: center; /* Centraliza o texto */
         padding: 10px 20px; /* Ajusta o espaçamento */
@@ -752,21 +774,21 @@ body.bservicos .log {
     padding: 20px 50px 0 50px;
 }
 
-body.bservicos .h1servicos {
+.h1servicos {
     position: absolute;
     min-width: 50%;
     top: 50%; /* Centraliza verticalmente */
     left: 50%; /* Centraliza horizontalmente */
     transform: translate(-50%, -50%); /* Ajusta o texto para o verdadeiro centro */
     color: white; /* Cor do texto */
-    font-size: 5rem; /* Ajuste conforme necessário */
+    font-size: 2,5rem; /* Ajuste conforme necessário */
     font-weight: 300;
     text-align: center; /* Centraliza o texto */
 }
 
 /* AQUI ABAIXO ESTILIZAÇÃO PARA A PAGINA SOBRE NÓS*/
 
-body.bsobrenos .h1sobrenos {
+ .h1sobrenos {
     position: absolute;
 
     top: 50%; /* Centraliza verticalmente */
