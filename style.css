@@ -765,6 +765,9 @@ header nav.nav-mobile ul li {
         padding-left: 50px;
     }
 
+    .imgsobrenos img {
+        max-width: 100%;
+    }
     
 }
 
