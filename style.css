@@ -774,6 +774,11 @@ header nav.nav-mobile ul li {
         max-width: 100%;
     }
     
+    h1.h1sobrenos{
+        font-size: 3rem; /* Ajuste conforme necessário */
+
+    }
+
 }
 
 /* AQUI ABAIXO ESTILIZAÇÃO PARA A PAGINA SERVIÇOS*/

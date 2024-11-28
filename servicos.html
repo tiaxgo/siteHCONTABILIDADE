@@ -60,7 +60,11 @@
     <!-- Conteúdo Principal -->
     <div class="content">
         <div class="image-container-servicos">
-            <img src="src/img/fotobannerservicos.jpg" alt="Imagem de Fundo" class="background-image">
+            <picture>
+                <source media="(max-width: 1000px)" srcset="src/img/fotobannerservicos.jpg">
+                <!-- Outros <source> podem ser adicionados aqui -->
+                <img src="src/img/fotobannerservicogrande.jpg" alt="Imagem de Fundo" class="background-image">
+            </picture>
             <h1 class="h1sobrenos">Nossos Serviços</h1>
     </div>
        
