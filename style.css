@@ -181,6 +181,7 @@ a:visited {
     background-color: #F3F3F3;
     display: flex;
     height: 500px;
+    -webkit-mask-repeat-x: 100%;
     width: 100%;
    
 }
@@ -189,13 +190,14 @@ a:visited {
   background-color: #F3F3F3;
   display: flex;
   justify-content: space-evenly; 
-  width: 100%;
+  max-width: 100%;
     
 }
 
 .imgperfil {
     padding: 50px 50px 50px 50px;
     justify-content: center;
+    max-width: 100%;
 }
 
 .text-apresentacao {
