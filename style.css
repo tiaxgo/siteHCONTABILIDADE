@@ -267,6 +267,7 @@ a:visited {
 
 .h1servicos {
     padding-top: 30px;
+
 }
 
 .divdeservico {
@@ -421,6 +422,7 @@ hr {
 
 .linha {
     background-color: #AC786C;
+    padding-top: 10px;
 }
 
 
@@ -574,6 +576,10 @@ header nav.nav-mobile ul li {
         
 
     }
+
+    .image-container img {
+        width: 112%;
+      }
 
     .image-container-servicos {
         margin-top: 65px;
