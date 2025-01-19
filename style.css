@@ -563,6 +563,7 @@ header nav.nav-mobile ul li {
 .icons {
     width: 100%;
     padding-left: 15px;
+    display: none;
     
 }
 
