@@ -449,11 +449,12 @@ input[type="checkbox"] {
 
 .bi-moon {
     display: block;
-
+    color: #fff; 
 }
 
 .bi-sun {
     display: none;
+    color: #fff;
 }
 
 .dark .bi-moon {
@@ -750,6 +751,7 @@ header nav.nav-mobile ul li {
     
     label {
         padding-left: 10px;
+        
     }
 
     .sobrenos {
