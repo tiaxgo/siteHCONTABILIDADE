@@ -150,8 +150,8 @@ a:visited {
     color: black;
 }
 .alink {
-    color:#8A6056; 
-    border-bottom: 1px solid #8A6056; /* Adiciona uma "linha" embaixo */
+    color: var(--cor-primaria);
+    border-bottom: 1px solid var(--cor-primaria); /* Adiciona uma "linha" embaixo */
     padding-bottom: 0px;            /* Ajusta a distância da linha */
 
 }
@@ -162,11 +162,11 @@ a:visited {
 }
 
 .filho-rodape ul li a span {
-    color:#8A6056;
+    color: var(--cor-primaria);
 }
 
 .filho-rodape ul li a span:link {
-    color:#8A6056;
+    color: var(--cor-primaria);
     text-decoration: none;
     
 }
@@ -217,7 +217,7 @@ a:visited {
 }
 
 .text-apresentacao h1  {
-    color: rgba(172, 120, 108, 1);
+    color: var(--cor-primaria);
     font-weight: 300;
     font-style: normal;
 }
@@ -274,8 +274,8 @@ a:visited {
 .log img {
     padding-bottom: 25px;
     padding-top: 25px;
-    max-width: 80px;
-    max-height: 80px;
+    max-width: 100px;
+    max-height: 100px;
 }
 
 
@@ -370,7 +370,7 @@ hr {
   li {
     margin-bottom: 15px; /* Espaço de 10px entre os itens */
     font-size: 13px;
-    color: #8A6056;
+    color: var(--cor-primaria);
   }
 
   /* Menu Lateral */
@@ -606,11 +606,20 @@ header nav.nav-mobile ul li {
     }
     .navMobile {
        display: flex;
+       width: 75%;
 
         
     }
-    .logosidemenu {
+    .logosidemenu  {
         margin: 10px;
+
+
+    }    
+
+    .logosidemenu img {
+        margin: 10px;
+        max-width: 25px !important;
+        padding-top: 13px !important;
 
     }
 
@@ -618,7 +627,7 @@ header nav.nav-mobile ul li {
         margin: 10px;
         font-weight: 300;
         word-wrap: break-word; /* Quebrar texto se necessário */
-        padding-top: 16px;
+        padding-top: 23px;
        
     }
 
