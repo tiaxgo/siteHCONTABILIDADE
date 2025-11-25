@@ -103,7 +103,7 @@ body {
     display: flex;
     text-align: center;
     justify-content: space-around;
-    background-color: #AC786C;
+    background-color: #274653;
     height: 150px;
     width: 100%; 
 }
@@ -232,12 +232,12 @@ a:visited {
     height: 100%;
     padding: 50px 50px 0px 50px;
     text-align: center;
-    background-color: #F3F3F3;
+    background-color: #F8F8F8;
 
 }
 
 .servicoscontatenos {
-        background-color: #AC786C;
+        background-color: #274653;
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -278,7 +278,7 @@ a:visited {
 
 .divdeservico {
     position: relative; /* Torna .servicos o contêiner de referência */
-    background-color: #AC786C;
+    background-color: #274653;
     height: 100px;
     width: 100%;
     text-align: center;
@@ -299,7 +299,7 @@ a:visited {
 }
 
 .rodape {
-    background-color: #F3F3F3;
+    background-color: #d9e2e6;
 }
 
 .rodape {
@@ -341,7 +341,7 @@ a:visited {
 }
 
 footer {  
-    background-color: #F3F3F3;
+    background-color: #d9e2e6;
     text-align: center;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -427,7 +427,7 @@ hr {
 }
 
 .linha {
-    background-color: #AC786C;
+    background-color: #274653;
     padding-top: 10px;
 }
 
